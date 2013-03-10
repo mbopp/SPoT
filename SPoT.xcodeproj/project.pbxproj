@@ -22,6 +22,11 @@
 		63BC62A216EB92620010D97D /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62A116EB92620010D97D /* HawaiiImageViewController.m */; };
 		63BC62A516EB952E0010D97D /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62A416EB952E0010D97D /* FlickrPhotoTVC.m */; };
 		63BC62A816EB97A80010D97D /* LatestFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62A716EB97A70010D97D /* LatestFlickrPhotosTVC.m */; };
+		63BC62AB16ED08830010D97D /* StanfordFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62AA16ED08830010D97D /* StanfordFlickrPhotoTVC.m */; };
+		63BC62AD16ED0D8E0010D97D /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BC62AC16ED0D8E0010D97D /* photo.png */; };
+		63BC62B016ED0E540010D97D /* stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BC62AF16ED0E540010D97D /* stopwatch.png */; };
+		63BC62B316ED0ED10010D97D /* RecentFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62B216ED0ED10010D97D /* RecentFlickrPhotoTVC.m */; };
+		63BC62B716ED12F50010D97D /* RecentPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62B616ED12F50010D97D /* RecentPhotos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,14 @@
 		63BC62A416EB952E0010D97D /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
 		63BC62A616EB97A70010D97D /* LatestFlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestFlickrPhotosTVC.h; sourceTree = "<group>"; };
 		63BC62A716EB97A70010D97D /* LatestFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestFlickrPhotosTVC.m; sourceTree = "<group>"; };
+		63BC62A916ED08830010D97D /* StanfordFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StanfordFlickrPhotoTVC.h; sourceTree = "<group>"; };
+		63BC62AA16ED08830010D97D /* StanfordFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StanfordFlickrPhotoTVC.m; sourceTree = "<group>"; };
+		63BC62AC16ED0D8E0010D97D /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		63BC62AF16ED0E540010D97D /* stopwatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopwatch.png; sourceTree = "<group>"; };
+		63BC62B116ED0ED10010D97D /* RecentFlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentFlickrPhotoTVC.h; sourceTree = "<group>"; };
+		63BC62B216ED0ED10010D97D /* RecentFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentFlickrPhotoTVC.m; sourceTree = "<group>"; };
+		63BC62B516ED12F50010D97D /* RecentPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotos.h; sourceTree = "<group>"; };
+		63BC62B616ED12F50010D97D /* RecentPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,16 +109,22 @@
 		63BC627B16EAB8A20010D97D /* SPoT */ = {
 			isa = PBXGroup;
 			children = (
+				63BC62B416ED0FF60010D97D /* Model */,
 				63BC628D16EAB8A20010D97D /* MainStoryboard.storyboard */,
+				63BC62B116ED0ED10010D97D /* RecentFlickrPhotoTVC.h */,
+				63BC62B216ED0ED10010D97D /* RecentFlickrPhotoTVC.m */,
 				63BC62A316EB952E0010D97D /* FlickrPhotoTVC.h */,
 				63BC62A416EB952E0010D97D /* FlickrPhotoTVC.m */,
 				63BC62A616EB97A70010D97D /* LatestFlickrPhotosTVC.h */,
 				63BC62A716EB97A70010D97D /* LatestFlickrPhotosTVC.m */,
+				63BC62A916ED08830010D97D /* StanfordFlickrPhotoTVC.h */,
+				63BC62AA16ED08830010D97D /* StanfordFlickrPhotoTVC.m */,
 				63BC62A016EB92620010D97D /* HawaiiImageViewController.h */,
 				63BC62A116EB92620010D97D /* HawaiiImageViewController.m */,
 				63BC629D16EB8F360010D97D /* ImageViewController.h */,
 				63BC629E16EB8F360010D97D /* ImageViewController.m */,
 				63BC629816EAB9210010D97D /* FlickrFetcher */,
+				63BC62AE16ED0DAF0010D97D /* Assets */,
 				63BC627C16EAB8A20010D97D /* Supporting Files */,
 			);
 			path = SPoT;
@@ -135,6 +154,24 @@
 				63BC629B16EAB9210010D97D /* FlickrFetcher.m */,
 			);
 			path = FlickrFetcher;
+			sourceTree = "<group>";
+		};
+		63BC62AE16ED0DAF0010D97D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63BC62AF16ED0E540010D97D /* stopwatch.png */,
+				63BC62AC16ED0D8E0010D97D /* photo.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		63BC62B416ED0FF60010D97D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63BC62B516ED12F50010D97D /* RecentPhotos.h */,
+				63BC62B616ED12F50010D97D /* RecentPhotos.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +230,8 @@
 				63BC628A16EAB8A20010D97D /* Default@2x.png in Resources */,
 				63BC628C16EAB8A20010D97D /* Default-568h@2x.png in Resources */,
 				63BC628F16EAB8A20010D97D /* MainStoryboard.storyboard in Resources */,
+				63BC62AD16ED0D8E0010D97D /* photo.png in Resources */,
+				63BC62B016ED0E540010D97D /* stopwatch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +249,9 @@
 				63BC62A216EB92620010D97D /* HawaiiImageViewController.m in Sources */,
 				63BC62A516EB952E0010D97D /* FlickrPhotoTVC.m in Sources */,
 				63BC62A816EB97A80010D97D /* LatestFlickrPhotosTVC.m in Sources */,
+				63BC62AB16ED08830010D97D /* StanfordFlickrPhotoTVC.m in Sources */,
+				63BC62B316ED0ED10010D97D /* RecentFlickrPhotoTVC.m in Sources */,
+				63BC62B716ED12F50010D97D /* RecentPhotos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
