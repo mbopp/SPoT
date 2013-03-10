@@ -12,7 +12,7 @@
 
 @interface RecentPhotos : NSObject
 
-+ (NSArray *)recentPhotos;
++ (NSArray *)getRecentPhotos;
 + (void)addPhotoToRecents:(NSDictionary *) photo;
 
 @end

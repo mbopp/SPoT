@@ -7,25 +7,45 @@
 //
 
 #import "RecentPhotos.h"
+#import "FlickrFetcher.h"
 
 @implementation RecentPhotos
 
 #define RECENT_PHOTOS_KEY       @"recent_spot_photos"
 #define VIEWED_PHOTO_TIMESTAMP  @"last_viewed"
 
-+ (NSArray *)recentPhotos
++ (NSArray *)getRecentPhotos
 {
-    NSArray *recentPhotos = [[NSUserDefaults standardUserDefaults] arrayForKey:RECENT_PHOTOS_KEY];    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSArray *recentPhotos = [[NSUserDefaults standardUserDefaults] arrayForKey:RECENT_PHOTOS_KEY];
+    if (!recentPhotos) {
+        recentPhotos = [[NSArray alloc] init];
+    }
     return recentPhotos;
 }
 
 + (void)addPhotoToRecents:(NSDictionary *) photo
 {
-    NSMutableArray *recentPhotos = [[RecentPhotos recentPhotos] mutableCopy];
+    NSMutableArray *photos = [[[self class] getRecentPhotos] mutableCopy];
     
-    [recentPhotos addObject:photo];
+    if ([photos containsObject:photo]) {
+        NSLog(@"Removing %@", [photo valueForKey:FLICKR_PHOTO_TITLE]);
+        [photos removeObject:photo];
+    } else {
+        if ([photos count] >= MAX_RECENT_PHOTOS) {
+            [photos removeLastObject];
+        }
+    }
     
-    [[NSUserDefaults standardUserDefaults] setObject:recentPhotos forKey:RECENT_PHOTOS_KEY];
+    // We can set the time like below, but we will then need to modify the way we search for an existing photo above,
+    //   since the pointer will change when making mutable
+    
+//    NSMutableDictionary *viewedPhoto = [photo mutableCopy];
+//    [viewedPhoto setObject:[NSDate date] forKey:VIEWED_PHOTO_TIMESTAMP];
+    NSLog(@"Adding %@", [photo valueForKey:FLICKR_PHOTO_TITLE]);
+    [photos insertObject:photo atIndex:0];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[photos copy] forKey:RECENT_PHOTOS_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

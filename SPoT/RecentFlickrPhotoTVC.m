@@ -15,10 +15,10 @@
 
 @implementation RecentFlickrPhotoTVC
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-    self.photos = [RecentPhotos recentPhotos];
+    [super viewDidAppear:animated];
+    self.photos = [RecentPhotos getRecentPhotos];
 }
 
 @end
