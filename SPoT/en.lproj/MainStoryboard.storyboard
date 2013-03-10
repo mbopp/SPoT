@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="562" y="103"/>
         </scene>
-        <!--Image View Controller-->
+        <!--Flickr Image View Controller-->
         <scene sceneID="Z86-wg-QZe">
             <objects>
-                <viewController id="bps-bw-2l2" customClass="ImageViewController" sceneMemberID="viewController">
+                <viewController id="bps-bw-2l2" customClass="FlickrImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aow-Fg-UKc">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -185,6 +185,9 @@
         <image name="stopwatch.png" width="29" height="30"/>
     </resources>
     <classes>
+        <class className="FlickrImageViewController" superclassName="ImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlickrImageViewController.h"/>
+        </class>
         <class className="FlickrPhotoTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FlickrPhotoTVC.h"/>
         </class>

@@ -27,6 +27,7 @@
 		63BC62B016ED0E540010D97D /* stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BC62AF16ED0E540010D97D /* stopwatch.png */; };
 		63BC62B316ED0ED10010D97D /* RecentFlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62B216ED0ED10010D97D /* RecentFlickrPhotoTVC.m */; };
 		63BC62B716ED12F50010D97D /* RecentPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62B616ED12F50010D97D /* RecentPhotos.m */; };
+		63BC62BA16ED198B0010D97D /* FlickrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BC62B916ED198B0010D97D /* FlickrImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		63BC62B216ED0ED10010D97D /* RecentFlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentFlickrPhotoTVC.m; sourceTree = "<group>"; };
 		63BC62B516ED12F50010D97D /* RecentPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotos.h; sourceTree = "<group>"; };
 		63BC62B616ED12F50010D97D /* RecentPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotos.m; sourceTree = "<group>"; };
+		63BC62B816ED198B0010D97D /* FlickrImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrImageViewController.h; sourceTree = "<group>"; };
+		63BC62B916ED198B0010D97D /* FlickrImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				63BC62A116EB92620010D97D /* HawaiiImageViewController.m */,
 				63BC629D16EB8F360010D97D /* ImageViewController.h */,
 				63BC629E16EB8F360010D97D /* ImageViewController.m */,
+				63BC62B816ED198B0010D97D /* FlickrImageViewController.h */,
+				63BC62B916ED198B0010D97D /* FlickrImageViewController.m */,
 				63BC629816EAB9210010D97D /* FlickrFetcher */,
 				63BC62AE16ED0DAF0010D97D /* Assets */,
 				63BC627C16EAB8A20010D97D /* Supporting Files */,
@@ -252,6 +257,7 @@
 				63BC62AB16ED08830010D97D /* StanfordFlickrPhotoTVC.m in Sources */,
 				63BC62B316ED0ED10010D97D /* RecentFlickrPhotoTVC.m in Sources */,
 				63BC62B716ED12F50010D97D /* RecentPhotos.m in Sources */,
+				63BC62BA16ED198B0010D97D /* FlickrImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

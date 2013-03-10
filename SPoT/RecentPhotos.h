@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define MAX_RECENT_PHOTOS 10
+
 @interface RecentPhotos : NSObject
 
 + (NSArray *)recentPhotos;
