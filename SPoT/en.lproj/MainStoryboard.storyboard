@@ -48,7 +48,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="jHI-UF-TIs" kind="push" id="8dd-gE-XOk"/>
+                                    <segue destination="jHI-UF-TIs" kind="push" identifier="Show Category" id="8dd-gE-XOk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -61,6 +61,25 @@
     return validTags;
 }
 
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        if (indexPath) {
+            if ([segue.identifier isEqualToString:@"Show Category"]) {
+                if ([segue.destinationViewController respondsToSelector:@selector(setPhotoCategory:)]) {
+                    
+                    [segue.destinationViewController performSelector:@selector(setPhotoCategory:) withObject:self.tags[indexPath.row]];
+                    [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                    
+                }
+            }
+        }
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

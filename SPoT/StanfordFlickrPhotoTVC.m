@@ -7,7 +7,7 @@
 //
 
 #import "StanfordFlickrPhotoTVC.h"
-#import "FlickrFetcher.h"
+#import "CategoryPhotos.h"
 
 @interface StanfordFlickrPhotoTVC ()
 
@@ -15,10 +15,23 @@
 
 @implementation StanfordFlickrPhotoTVC
 
+- (void)setPhotoCategory:(NSDictionary *)photoCategory
+{
+    NSLog(@"Set Photo Category: %@", photoCategory);
+    _photoCategory = photoCategory;
+    [self resetTable];
+}
+
+- (void)resetTable
+{
+    self.photos = [CategoryPhotos photosForCategory:self.photoCategory];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.photos = [FlickrFetcher stanfordPhotos];
+    [self resetTable];
+//    self.photos = [FlickrFetcher stanfordPhotos];
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface StanfordFlickrPhotoTVC : FlickrPhotoTVC
 
+@property (nonatomic, strong) NSDictionary *photoCategory;
+
 @end

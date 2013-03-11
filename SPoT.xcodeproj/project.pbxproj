@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		638A78A716EE40190096D79D /* FlickrTagsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A78A616EE40190096D79D /* FlickrTagsTVC.m */; };
+		638A78AB16EE98370096D79D /* CategoryPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A78AA16EE98370096D79D /* CategoryPhotos.m */; };
 		63BC627616EAB8A20010D97D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC627516EAB8A20010D97D /* UIKit.framework */; };
 		63BC627816EAB8A20010D97D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC627716EAB8A20010D97D /* Foundation.framework */; };
 		63BC627A16EAB8A20010D97D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC627916EAB8A20010D97D /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		638A78A516EE40190096D79D /* FlickrTagsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrTagsTVC.h; sourceTree = "<group>"; };
 		638A78A616EE40190096D79D /* FlickrTagsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrTagsTVC.m; sourceTree = "<group>"; };
+		638A78A916EE98370096D79D /* CategoryPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPhotos.h; sourceTree = "<group>"; };
+		638A78AA16EE98370096D79D /* CategoryPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPhotos.m; sourceTree = "<group>"; };
 		63BC627216EAB8A20010D97D /* SPoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC627516EAB8A20010D97D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63BC627716EAB8A20010D97D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -188,6 +191,8 @@
 			children = (
 				63BC62B516ED12F50010D97D /* RecentPhotos.h */,
 				63BC62B616ED12F50010D97D /* RecentPhotos.m */,
+				638A78A916EE98370096D79D /* CategoryPhotos.h */,
+				638A78AA16EE98370096D79D /* CategoryPhotos.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				63BC62B716ED12F50010D97D /* RecentPhotos.m in Sources */,
 				63BC62BA16ED198B0010D97D /* FlickrImageViewController.m in Sources */,
 				638A78A716EE40190096D79D /* FlickrTagsTVC.m in Sources */,
+				638A78AB16EE98370096D79D /* CategoryPhotos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
