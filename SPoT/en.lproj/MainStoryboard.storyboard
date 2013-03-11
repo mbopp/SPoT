@@ -8,7 +8,7 @@
         <scene sceneID="HZT-Re-cPJ">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="3qH-o4-8Xu" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="mc2-o5-UTw">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -21,7 +21,47 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyY-QI-9xV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="418"/>
+            <point key="canvasLocation" x="-861" y="418"/>
+        </scene>
+        <!--Flickr TagsTVC - Stanford Photo Tags-->
+        <scene sceneID="Q9J-yX-K9R">
+            <objects>
+                <tableViewController id="7en-5z-xzA" customClass="FlickrTagsTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qvL-Cu-lSv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Tag Cell" textLabel="NbY-rY-cQ1" style="IBUITableViewCellStyleDefault" id="vpi-fv-ML3">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-rY-cQ1">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="jHI-UF-TIs" kind="push" id="8dd-gE-XOk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7en-5z-xzA" id="cEZ-f6-9bO"/>
+                            <outlet property="delegate" destination="7en-5z-xzA" id="WJm-zH-LJS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Stanford Photo Tags" id="qub-t0-KMr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3c-81-voj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="103"/>
         </scene>
         <!--Stanford Flickr PhotoTVC - Stanford Photos-->
         <scene sceneID="9rq-WT-kjU">
@@ -107,12 +147,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="jHI-UF-TIs" kind="relationship" relationship="rootViewController" id="UkB-2z-yUq"/>
+                        <segue destination="7en-5z-xzA" kind="relationship" relationship="rootViewController" id="R1g-rS-e5N"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isV-e7-P5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="103"/>
+            <point key="canvasLocation" x="-310" y="103"/>
         </scene>
         <!--Navigation Controller - Recently Viewed-->
         <scene sceneID="1eB-XY-g73">
@@ -190,6 +230,9 @@
         </class>
         <class className="FlickrPhotoTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FlickrPhotoTVC.h"/>
+        </class>
+        <class className="FlickrTagsTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlickrTagsTVC.h"/>
         </class>
         <class className="ImageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
