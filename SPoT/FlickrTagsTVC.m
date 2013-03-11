@@ -100,7 +100,7 @@
 
 - (NSString *)titleForRow:(NSUInteger)indexPath
 {
-    return [self.tags[indexPath] valueForKey:@"tag"];
+    return [[self.tags[indexPath] valueForKey:@"tag"] capitalizedString];
 }
 
 #pragma mark - Table view delegate
