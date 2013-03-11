@@ -204,7 +204,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="bps-bw-2l2" kind="push" id="Ipf-VN-4Dp"/>
+                                    <segue destination="bps-bw-2l2" kind="push" identifier="Show Image" id="Ipf-VN-4Dp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -85,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638A78A816EE93130096D79D /* Obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				63BC62A016EB92620010D97D /* HawaiiImageViewController.h */,
+				63BC62A116EB92620010D97D /* HawaiiImageViewController.m */,
+				63BC62A616EB97A70010D97D /* LatestFlickrPhotosTVC.h */,
+				63BC62A716EB97A70010D97D /* LatestFlickrPhotosTVC.m */,
+			);
+			name = Obsolete;
+			sourceTree = "<group>";
+		};
 		63BC626916EAB8A20010D97D = {
 			isa = PBXGroup;
 			children = (
@@ -123,16 +134,13 @@
 				63BC62B216ED0ED10010D97D /* RecentFlickrPhotoTVC.m */,
 				63BC62A316EB952E0010D97D /* FlickrPhotoTVC.h */,
 				63BC62A416EB952E0010D97D /* FlickrPhotoTVC.m */,
-				63BC62A616EB97A70010D97D /* LatestFlickrPhotosTVC.h */,
-				63BC62A716EB97A70010D97D /* LatestFlickrPhotosTVC.m */,
 				63BC62A916ED08830010D97D /* StanfordFlickrPhotoTVC.h */,
 				63BC62AA16ED08830010D97D /* StanfordFlickrPhotoTVC.m */,
-				63BC62A016EB92620010D97D /* HawaiiImageViewController.h */,
-				63BC62A116EB92620010D97D /* HawaiiImageViewController.m */,
 				63BC629D16EB8F360010D97D /* ImageViewController.h */,
 				63BC629E16EB8F360010D97D /* ImageViewController.m */,
 				63BC62B816ED198B0010D97D /* FlickrImageViewController.h */,
 				63BC62B916ED198B0010D97D /* FlickrImageViewController.m */,
+				638A78A816EE93130096D79D /* Obsolete */,
 				63BC629816EAB9210010D97D /* FlickrFetcher */,
 				63BC62AE16ED0DAF0010D97D /* Assets */,
 				63BC627C16EAB8A20010D97D /* Supporting Files */,

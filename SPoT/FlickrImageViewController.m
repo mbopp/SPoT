@@ -18,6 +18,7 @@
 
 - (void)setImageDictionary:(NSDictionary *)imageDictionary
 {
+    NSLog(@"%@", imageDictionary);
     [RecentPhotos addPhotoToRecents:imageDictionary];
     self.imageURL = [FlickrFetcher urlForPhoto:imageDictionary format:FlickrPhotoFormatLarge];
 }
